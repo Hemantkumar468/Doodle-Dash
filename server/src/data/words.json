@@ -1,0 +1,68 @@
+{
+  "animals": [
+    "ant", "anteater", "antelope", "ape", "armadillo", "badger", "bat", "bear", "beaver", "bee",
+    "beetle", "bison", "boar", "buffalo", "butterfly", "camel", "capybara", "cat", "caterpillar", "chameleon",
+    "cheetah", "chicken", "chimpanzee", "chipmunk", "cobra", "cockroach", "cow", "coyote", "crab", "crocodile",
+    "crow", "deer", "dinosaur", "dog", "dolphin", "donkey", "dragonfly", "duck", "eagle", "eel",
+    "elephant", "elk", "emu", "falcon", "ferret", "flamingo", "fly", "fox", "frog", "gazelle",
+    "giraffe", "goat", "goose", "gorilla", "grasshopper", "hamster", "hare", "hedgehog", "hippo", "horse",
+    "hummingbird", "hyena", "iguana", "jaguar", "jellyfish", "kangaroo", "koala", "ladybug", "lemur", "leopard",
+    "lion", "lizard", "llama", "lobster", "manatee", "meerkat", "mole", "monkey", "moose", "mosquito",
+    "moth", "mouse", "octopus", "ostrich", "otter", "owl", "panda", "panther", "parrot", "peacock",
+    "pelican", "penguin", "pig", "pigeon", "polar bear", "porcupine", "rabbit", "raccoon", "ram", "rat",
+    "raven", "reindeer", "rhinoceros", "rooster", "salamander", "scorpion", "seahorse", "seal", "shark", "sheep",
+    "skunk", "sloth", "snail", "snake", "sparrow", "spider", "squid", "squirrel", "starfish", "stingray",
+    "swan", "tiger", "toad", "toucan", "turtle", "walrus", "wasp", "whale", "wolf", "zebra"
+  ],
+  "objects": [
+    "alarm clock", "anchor", "backpack", "balloon", "basket", "bed", "bell", "belt", "bicycle", "binoculars",
+    "blanket", "blender", "book", "bookshelf", "bottle", "bowl", "box", "bracelet", "broom", "bucket",
+    "button", "camera", "candle", "canoe", "car", "carpet", "chair", "clock", "coat", "comb",
+    "computer", "couch", "crayon", "crown", "cup", "curtain", "desk", "dice", "door", "drum",
+    "envelope", "eraser", "fan", "feather", "fence", "flashlight", "fork", "frying pan", "glasses", "globe",
+    "guitar", "hammer", "handbag", "hat", "headphones", "helmet", "hourglass", "iron", "jar", "key",
+    "keyboard", "kite", "ladder", "lamp", "laptop", "lock", "magnet", "mailbox", "map", "marker",
+    "microphone", "mirror", "mop", "motorcycle", "mug", "needle", "newspaper", "notebook", "paintbrush", "paperclip",
+    "pencil", "phone", "piano", "pillow", "plate", "pliers", "pocket watch", "printer", "purse", "radio",
+    "refrigerator", "ring", "robot", "rocket", "roller skate", "rope", "ruler", "sailboat", "scissors", "screwdriver",
+    "shovel", "skateboard", "sofa", "spoon", "stapler", "stool", "suitcase", "sunglasses", "sword", "table",
+    "telescope", "television", "tent", "thermometer", "toaster", "toothbrush", "train", "trophy", "truck", "umbrella",
+    "vacuum", "vase", "violin", "wallet", "washing machine", "watch", "wheelbarrow", "whistle", "window", "wrench",
+    "airplane", "ambulance", "baby stroller", "baseball bat", "birdhouse", "bow and arrow", "calculator", "calendar", "chainsaw", "chessboard"
+  ],
+  "food": [
+    "apple", "avocado", "bacon", "bagel", "banana", "beans", "birthday cake", "blueberry", "bread", "broccoli",
+    "brownie", "burger", "burrito", "butter", "cabbage", "carrot", "cereal", "cheese", "cherry", "chicken wing",
+    "chili", "chocolate", "coconut", "cookie", "corn", "croissant", "cupcake", "donut", "dumpling", "egg",
+    "eggplant", "french fries", "fried egg", "garlic", "gingerbread man", "grapes", "green pepper", "hamburger", "honey", "hot dog",
+    "ice cream", "jam", "jelly", "kiwi", "lemon", "lime", "lollipop", "macaroni", "mango", "meatball",
+    "milk", "muffin", "mushroom", "mustard", "noodles", "onion", "orange", "pancake", "pasta", "peach",
+    "peanut", "pear", "peas", "pepperoni", "pickle", "pie", "pineapple", "pizza", "popcorn", "potato",
+    "pretzel", "pumpkin", "radish", "raspberry", "rice", "salad", "sandwich", "sausage", "shrimp", "soup",
+    "spaghetti", "steak", "strawberry", "sushi", "taco", "toast", "tomato", "turkey", "waffle", "watermelon",
+    "almonds", "asparagus", "blackberry", "candy cane", "cashew", "cauliflower", "celery", "cheesecake", "cinnamon roll", "cotton candy",
+    "fish sticks", "fruit salad", "grilled cheese", "gummy bear", "hash brown", "jelly beans", "ketchup", "lasagna", "marshmallow", "milkshake"
+  ],
+  "actions": [
+    "baking", "balancing", "bathing", "blinking", "bowling", "brushing teeth", "building", "camping", "catching", "clapping",
+    "climbing", "cooking", "crawling", "crying", "dancing", "digging", "diving", "drawing", "drinking", "driving",
+    "eating", "exercising", "fishing", "flying", "gardening", "hiding", "hiking", "hugging", "juggling", "jumping",
+    "kicking", "knitting", "laughing", "lifting", "painting", "planting", "playing guitar", "pointing", "reading", "rowing",
+    "running", "sailing", "singing", "skateboarding", "skiing", "sleeping", "smiling", "sneezing", "snowboarding", "swimming",
+    "taking a photo", "throwing", "typing", "walking", "washing dishes", "waving", "whistling", "writing", "yawning", "ziplining",
+    "opening a gift", "riding a bicycle", "walking a dog", "watering flowers", "blowing bubbles", "building a snowman", "catching a ball", "chopping wood", "climbing a ladder", "feeding a baby",
+    "flying a kite", "making a bed", "mowing the lawn", "playing chess", "raking leaves", "reading a map", "riding a horse", "tying shoes", "using an umbrella", "washing a car",
+    "blowing a kiss", "crossing a bridge", "drinking tea", "eating noodles", "folding clothes", "opening a door", "playing piano", "pushing a cart", "shaking hands", "walking upstairs"
+  ],
+  "places": [
+    "airport", "amusement park", "aquarium", "bakery", "barn", "beach", "bedroom", "bridge", "bus stop", "cabin",
+    "cafe", "castle", "cave", "church", "circus", "classroom", "desert", "farm", "fire station", "forest",
+    "garage", "garden", "gas station", "grocery store", "gym", "harbor", "hospital", "hotel", "island", "jungle",
+    "kitchen", "lake", "library", "lighthouse", "living room", "mountain", "museum", "office", "park", "parking lot",
+    "playground", "police station", "post office", "restaurant", "river", "school", "stadium", "subway station", "supermarket", "swimming pool",
+    "theater", "train station", "treehouse", "volcano", "waterfall", "zoo", "bank", "barbershop", "basketball court", "bookstore",
+    "bowling alley", "campground", "city", "concert hall", "construction site", "dock", "factory", "flower shop", "football field", "fountain",
+    "ice rink", "laboratory", "laundromat", "moon", "movie theater", "orchard", "palace", "picnic area", "planet", "rainforest",
+    "rooftop", "space station", "toy store", "tunnel", "village", "water park", "windmill", "dentist office", "pet shop", "skate park"
+  ]
+}

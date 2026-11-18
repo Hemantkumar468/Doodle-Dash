@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  color: #f8f7ff;
+  background: #090218;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; min-height: 100%; overflow-x: clip; background: #090218; }
+body { margin: 0; min-width: 320px; min-height: 100dvh; overflow-x: clip; background: #090218; }
+#root { min-height: 100dvh; }
+button, input, select, textarea { font: inherit; }
+input, select, textarea { font-size: 16px; }
+button, [role="button"] { min-height: 44px; min-width: 44px; -webkit-tap-highlight-color: transparent; }
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, a:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid #fbbf24;
+  outline-offset: 2px;
+}
+button:disabled { cursor: not-allowed; }
+::selection { color: #100525; background: #fcd34d; }
+
+@layer components {
+  .app-bg {
+    @apply min-h-dvh overflow-x-clip bg-night-950 text-white;
+    background-image:
+      radial-gradient(circle at 12% 8%, rgba(124, 58, 237, .28), transparent 30rem),
+      radial-gradient(circle at 88% 92%, rgba(76, 29, 149, .42), transparent 34rem),
+      linear-gradient(145deg, #090218 0%, #190b3b 54%, #100525 100%);
+  }
+  .paper-card { @apply min-w-0 rounded-2xl border border-white/10 bg-white/[.07] text-white shadow-glass backdrop-blur-xl; }
+  .glass-panel { @apply min-w-0 rounded-2xl border border-white/10 bg-white/[.07] text-white shadow-glass backdrop-blur-xl; }
+  .panel-heading { @apply text-sm font-bold uppercase tracking-[.14em] text-violet-200; }
+  .primary-button { @apply inline-flex min-h-11 min-w-11 items-center justify-center gap-2 rounded-xl border border-brand-400/40 bg-brand-600 px-4 py-2.5 text-center text-sm font-bold leading-tight text-white shadow-button transition duration-175 hover:bg-brand-500 active:scale-[.97] disabled:cursor-not-allowed disabled:opacity-45 disabled:active:scale-100 motion-reduce:transition-none; }
+  .secondary-button { @apply inline-flex min-h-11 min-w-11 items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/10 px-4 py-2.5 text-center text-sm font-bold leading-tight text-white transition duration-175 hover:bg-white/15 active:scale-[.97] disabled:cursor-not-allowed disabled:opacity-45 disabled:active:scale-100 motion-reduce:transition-none; }
+  .danger-button { @apply inline-flex min-h-11 min-w-11 items-center justify-center gap-2 rounded-xl border border-danger-400/40 bg-danger-500 px-4 py-2.5 text-center text-sm font-bold leading-tight text-white transition duration-175 hover:bg-rose-500 active:scale-[.97] disabled:cursor-not-allowed disabled:opacity-45 disabled:active:scale-100 motion-reduce:transition-none; }
+  .field { @apply min-h-11 w-full min-w-0 rounded-xl border border-white/15 bg-white/[.08] px-3 py-2 text-base text-white shadow-inner outline-none placeholder:text-violet-300/70 transition duration-175 hover:border-white/25 focus:border-brand-400 focus:bg-white/10 disabled:cursor-not-allowed disabled:bg-white/[.04] disabled:text-violet-300/60 motion-reduce:transition-none; }
+  .label { @apply mb-1.5 block text-sm font-semibold leading-snug text-violet-100; }
+  .badge { @apply inline-flex min-h-7 min-w-0 items-center gap-1 rounded-full border border-white/10 bg-white/10 px-2.5 py-1 text-xs font-bold leading-tight text-violet-100; }
+  .icon-button { @apply inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded-xl border border-white/15 bg-white/[.08] p-2 font-bold text-white transition duration-175 hover:bg-white/15 active:scale-95 disabled:cursor-not-allowed disabled:opacity-40 disabled:active:scale-100 motion-reduce:transition-none; }
+  .surface-dark { @apply min-w-0 rounded-2xl border border-white/10 bg-white/[.07] text-white shadow-glass backdrop-blur-xl; }
+  .mobile-scroll-row { @apply flex snap-x snap-mandatory gap-2 overflow-x-auto overscroll-x-contain pb-2; scrollbar-width: thin; }
+}
+
+.safe-top { padding-top: max(0.75rem, env(safe-area-inset-top)); }
+.safe-bottom { padding-bottom: max(0.75rem, env(safe-area-inset-bottom)); }
+.safe-x {
+  padding-left: max(0.75rem, env(safe-area-inset-left));
+  padding-right: max(0.75rem, env(safe-area-inset-right));
+}
+.safe-all {
+  padding-top: max(0.75rem, env(safe-area-inset-top));
+  padding-right: max(0.75rem, env(safe-area-inset-right));
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+  padding-left: max(0.75rem, env(safe-area-inset-left));
+}
+
+.game-ui { -webkit-touch-callout: none; user-select: none; }
+.game-ui input, .game-ui textarea { -webkit-touch-callout: default; user-select: text; }
+.canvas-grid {
+  background-color: #ffffff;
+  background-image: radial-gradient(#ddd6fe 0.7px, transparent 0.7px);
+  background-size: 18px 18px;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+@media (max-width: 767px) and (min-height: 501px) and (max-height: 600px) {
+  .game-canvas-slot {
+    width: 40dvh !important;
+    max-width: calc(100vw - 1rem);
+    height: 30dvh !important;
+    aspect-ratio: 4 / 3;
+    align-self: center;
+  }
+  .game-role-message,
+  .game-drawer-hint { display: none; }
+}
+
+@media (max-width: 767px) and (min-height: 601px) and (max-height: 680px) {
+  .game-canvas-slot {
+    width: 45.333dvh !important;
+    max-width: calc(100vw - 1rem);
+    height: 34dvh !important;
+    aspect-ratio: 4 / 3;
+    align-self: center;
+  }
+  .game-role-message,
+  .game-drawer-hint { display: none; }
+}
+
+* { scrollbar-width: thin; scrollbar-color: rgba(196, 181, 253, .48) rgba(255, 255, 255, .04); }
+*::-webkit-scrollbar { width: 8px; height: 8px; }
+*::-webkit-scrollbar-track { background: rgba(255, 255, 255, .04); }
+*::-webkit-scrollbar-thumb { border: 2px solid transparent; border-radius: 999px; background: rgba(196, 181, 253, .48); background-clip: padding-box; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
